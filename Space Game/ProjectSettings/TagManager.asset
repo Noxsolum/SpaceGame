@@ -12,6 +12,7 @@ TagManager:
   - MenuButton
   - ResetButton
   - LevelMenu
+  - CanvasUI
   layers:
   - Default
   - TransparentFX

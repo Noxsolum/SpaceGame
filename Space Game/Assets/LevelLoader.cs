@@ -1,17 +1,22 @@
-﻿using System.Collections;
+﻿/*
+Notes:
+ - 
+
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class LevelLoader : PlanetScript
 {
-    public GameObject[] menuUI;
+    private GameObject _canvas;
+    public MenuAndUIScript menuUI;
 
     public void Update()
     {
-        menuUI = GameObject.FindGameObjectsWithTag("LevelMenu");
-
-        
+        _canvas = GameObject.FindGameObjectWithTag("CanvasUI");
+        menuUI = _canvas.GetComponent<MenuAndUIScript>();
     }
 
 
@@ -22,7 +27,8 @@ public class LevelLoader : PlanetScript
             case 0:
                 // Spawn Level 1
                 PlanetScript planet = new PlanetScript(0, new Vector3(0.0f, 5.0f, 0.0f));
-
+                Debug.Log("Clicked");
+                menuUI.HideMenu();
                 
                 break;
             case 1:

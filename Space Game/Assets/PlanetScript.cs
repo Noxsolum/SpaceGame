@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+Notes:
+- Creates the different planets.
+- Probably going to use this to spawn different planets/ meteors in the future.
+- Uses the planet class as well as some constructors to make spawning the levels a lot easier.
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,14 +14,9 @@ public class PlanetScript : MonoBehaviour {
     private Vector3 location = new Vector3(0.0f, 0.0f, 0.0f);
     private Quaternion rotation = new Quaternion(0.0f, 0.0f, 0.0f, 0.0f);
 
-    //public GameObject planetS;
-    //public GameObject planetM;
-    //public GameObject planetL;
-
     public PlanetScript()
     {
         planetSize = 0;
-        //SpawnPlanet(planetSize, location);
     }
 
     public PlanetScript(int _sizeX)

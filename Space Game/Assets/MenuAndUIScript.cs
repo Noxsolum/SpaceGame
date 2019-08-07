@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+Notes:
+
+
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,6 +16,7 @@ public class MenuAndUIScript : MonoBehaviour
     public GameObject rocketShip;
     public GameObject winBox;
     public winTrigger winTrigger;
+    public GameObject mainMenuPanel;
 
     private Vector2 startPos = new Vector2(0.0f, 1.35f);
 
@@ -19,6 +25,8 @@ public class MenuAndUIScript : MonoBehaviour
         rocketShip = GameObject.FindGameObjectWithTag("Player");
         cameraScript = GameObject.FindGameObjectWithTag("MainCamera");
         winBox = GameObject.FindGameObjectWithTag("WinBox");
+        mainMenuPanel = GameObject.FindGameObjectWithTag("LevelMenu");
+
         winTrigger = winBox.GetComponent<winTrigger>();
         Text();
         winState();
@@ -52,8 +60,8 @@ public class MenuAndUIScript : MonoBehaviour
         }
     }
 
-    public void HomeMenuWin()
+    public void HideMenu()
     {
-
+        mainMenuPanel.SetActive(false);
     }
 }

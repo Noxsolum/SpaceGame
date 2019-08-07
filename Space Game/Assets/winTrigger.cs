@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/*
+Notes:
+ - Basic script to create the winstate.
+ - Could be moved into a different script at somepoint but wanted to keep all the elements seperate for the time being.
+ - Detects when the player collider goes through the collider at the top of screen, basic but works pretty well.
+ - Currently no UI to reflect the win but has debug output.
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,7 +22,6 @@ public class winTrigger : MonoBehaviour
         rocketShip = GameObject.FindGameObjectWithTag("Player");
     }
 
-
     public void OnTriggerExit(Collider other)
     {
         if(other = rocketShip.GetComponent<Collider>())
@@ -24,5 +30,4 @@ public class winTrigger : MonoBehaviour
             _win = true;
         }
     }
-
 }

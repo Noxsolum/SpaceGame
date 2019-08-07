@@ -1,9 +1,14 @@
-﻿using System.Collections;
+﻿/*
+Notes:
+
+
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GravityScript : MonoBehaviour {
-
+public class GravityScript : MonoBehaviour
+{
     void Update()
     {
         GameObject[] planetS = GameObject.FindGameObjectsWithTag("PlanetS");
@@ -22,7 +27,6 @@ public class GravityScript : MonoBehaviour {
                 rocketShip.GetComponent<Rigidbody>().AddForce(planetPos - rocketPos);
                 Debug.Log("Adding Force");
             }
-            // use the fingers script to make it easier!
         }
     }
 }
