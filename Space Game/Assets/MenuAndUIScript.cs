@@ -1,7 +1,8 @@
 ﻿/*
 Notes:
-
-
+ - Win State has now been made although hasn't be tested yet
+ - Need to start making the levels
+ - Need to find a way to re-activate UI!!!!!!!!!!!!!!!!!!!!!!!!
 */
 using System.Collections;
 using System.Collections.Generic;
@@ -12,32 +13,33 @@ public class MenuAndUIScript : MonoBehaviour
 {
     public Text scoreText;
     public int launchDist;
-    public GameObject cameraScript;
-    public GameObject rocketShip;
-    public GameObject winBox;
-    public winTrigger winTrigger;
-    public GameObject mainMenuPanel;
+    public GameObject cameraScript, mainMenuPanel, rocketShip, winBoxUI;
 
+    public winTrigger winTrigger;
     private Vector2 startPos = new Vector2(0.0f, 1.35f);
 
     public void Update()
     {
+        // --- Getting GameObjects ---
         rocketShip = GameObject.FindGameObjectWithTag("Player");
         cameraScript = GameObject.FindGameObjectWithTag("MainCamera");
-        winBox = GameObject.FindGameObjectWithTag("WinBox");
-        mainMenuPanel = GameObject.FindGameObjectWithTag("LevelMenu");
 
-        winTrigger = winBox.GetComponent<winTrigger>();
+        // --- Getting UI Gameobjects ---
+        mainMenuPanel = GameObject.FindGameObjectWithTag("LevelMenu");
+        winBoxUI = GameObject.FindGameObjectWithTag("WinBoxUI");
+
+        // --- UI Methods ---
         Text();
-        winState();
     }
 
+    // --- UI For the Power ---
     public void Text()
     {
         CameraScript cameraScript_x = cameraScript.GetComponent<CameraScript>();
         scoreText.text = "Power: " + cameraScript_x.launchDist_y;
     }
 
+    // --- Button to Reset Level ---
     public void ResetLevel()
     {
         GameObject rocketShip = GameObject.FindGameObjectWithTag("Player");
@@ -48,16 +50,18 @@ public class MenuAndUIScript : MonoBehaviour
         Debug.Log("RESET");
     }
 
-    public void winState()
+    // --- The Win State ---
+    public void winBoxOpen()
     {
-        if (winTrigger._win == true)
-        {
-            Debug.Log("It's all connected");
+        Debug.Log("It's all connected");
 
-            // Do some hocus pocus to bring up a button prompt to return to menu
+        winBoxUI.SetActive(true);
+    }
 
-            winTrigger._win = false;
-        }
+    public void winBoxClose()
+    {
+        winBoxUI.SetActive(false);
+        mainMenuPanel.SetActive(true);
     }
 
     public void HideMenu()

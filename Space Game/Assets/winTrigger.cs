@@ -11,15 +11,21 @@ using UnityEngine;
 
 public class winTrigger : MonoBehaviour
 {
-    public bool _win = false;
     public GameObject rocketShip;
     public Collider winCollider;
 
+    private GameObject _canvas;
+    public MenuAndUIScript menuUI;
+
     public void Update()
     {
+
         winCollider = this.GetComponent<Collider>();
         winCollider.isTrigger = true;
         rocketShip = GameObject.FindGameObjectWithTag("Player");
+
+        _canvas = GameObject.FindGameObjectWithTag("CanvasUI");
+        menuUI = _canvas.GetComponent<MenuAndUIScript>();
     }
 
     public void OnTriggerExit(Collider other)
@@ -27,7 +33,7 @@ public class winTrigger : MonoBehaviour
         if(other = rocketShip.GetComponent<Collider>())
         {
             Debug.Log("WIN!!");
-            _win = true;
+            menuUI.winBoxOpen();
         }
     }
 }
