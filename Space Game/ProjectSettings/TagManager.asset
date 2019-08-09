@@ -14,6 +14,7 @@ TagManager:
   - LevelMenu
   - CanvasUI
   - WinBoxUI
+  - LoadingScreen
   layers:
   - Default
   - TransparentFX

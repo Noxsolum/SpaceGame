@@ -26,9 +26,9 @@ public class LevelLoader : PlanetScript
         {
             case 0:
                 // Spawn Level 1
-                PlanetScript planet = new PlanetScript(0, new Vector3(0.0f, 5.0f, 0.0f));
+                //PlanetScript planet = new PlanetScript(0, new Vector3(0.0f, 5.0f, 0.0f));
                 Debug.Log("Clicked");
-                menuUI.HideMenu();
+                menuUI.hideMenu();
                 
                 break;
             case 1:

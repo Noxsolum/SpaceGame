@@ -33,7 +33,7 @@ public class winTrigger : MonoBehaviour
         if(other = rocketShip.GetComponent<Collider>())
         {
             Debug.Log("WIN!!");
-            menuUI.winBoxOpen();
+            menuUI.openWinBox();
         }
     }
 }

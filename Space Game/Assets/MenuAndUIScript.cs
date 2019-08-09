@@ -11,23 +11,36 @@ using UnityEngine.UI;
 
 public class MenuAndUIScript : MonoBehaviour
 {
-    public Text scoreText;
+    // --- Variables ---
     public int launchDist;
-    public GameObject cameraScript, mainMenuPanel, rocketShip, winBoxUI;
-
-    public winTrigger winTrigger;
     private Vector2 startPos = new Vector2(0.0f, 1.35f);
 
-    public void Update()
+    // --- UI ---
+    public Text scoreText;
+    public winTrigger winTrigger;
+    public GameObject cameraScript, mainMenuPanel, winBoxUI, LoadingScreenUI;
+
+    // --- GameObjects ---
+    public GameObject rocketShip;
+
+    public void Start()
     {
         // --- Getting GameObjects ---
         rocketShip = GameObject.FindGameObjectWithTag("Player");
         cameraScript = GameObject.FindGameObjectWithTag("MainCamera");
+        LoadingScreenUI = GameObject.FindGameObjectWithTag("LoadingScreen");
 
         // --- Getting UI Gameobjects ---
         mainMenuPanel = GameObject.FindGameObjectWithTag("LevelMenu");
         winBoxUI = GameObject.FindGameObjectWithTag("WinBoxUI");
 
+
+        winBoxUI.SetActive(false);
+        LoadingScreenUI.SetActive(false);
+    }
+
+    public void Update()
+    {
         // --- UI Methods ---
         Text();
     }
@@ -51,21 +64,36 @@ public class MenuAndUIScript : MonoBehaviour
     }
 
     // --- The Win State ---
-    public void winBoxOpen()
+    public void openWinBox()
     {
         Debug.Log("It's all connected");
 
         winBoxUI.SetActive(true);
     }
 
-    public void winBoxClose()
+    public void hideWinBoxClose()
     {
+        LoadingScreenUI.SetActive(true);
+
         winBoxUI.SetActive(false);
         mainMenuPanel.SetActive(true);
+        ResetLevel();
+
+        LoadingScreenUI.SetActive(false);
     }
 
-    public void HideMenu()
+    public void hideMenu()
     {
         mainMenuPanel.SetActive(false);
+    }
+
+    public void openLoadingScreen()
+    {
+        LoadingScreenUI.SetActive(true);
+    }
+
+    public void hideLoadingScreen()
+    {
+        LoadingScreenUI.SetActive(false);
     }
 }
