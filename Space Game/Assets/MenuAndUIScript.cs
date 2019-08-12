@@ -22,6 +22,7 @@ public class MenuAndUIScript : MonoBehaviour
 
     // --- GameObjects ---
     public GameObject rocketShip;
+    public GameObject[] _planetS, _planetM, _planetL;
 
     public void Start()
     {
@@ -43,6 +44,11 @@ public class MenuAndUIScript : MonoBehaviour
     {
         // --- UI Methods ---
         Text();
+
+        // --- Planets ---
+        _planetS = GameObject.FindGameObjectsWithTag("PlanetS");
+        _planetM = GameObject.FindGameObjectsWithTag("PlanetM");
+        _planetL = GameObject.FindGameObjectsWithTag("PlanetL");
     }
 
     // --- UI For the Power ---
@@ -63,6 +69,33 @@ public class MenuAndUIScript : MonoBehaviour
         Debug.Log("RESET");
     }
 
+    private void clearLevel()
+    {
+        if (_planetS.Length != 0)
+        {
+            for (int i = 0; i < _planetS.Length; i++)
+            {
+                Destroy(_planetS[i]);
+            }
+        }
+
+        if (_planetM.Length != 0)
+        {
+            for (int i = 0; i < _planetM.Length; i++)
+            {
+                Destroy(_planetM[i]);
+            }
+        }
+
+        if (_planetL.Length != 0)
+        {
+            for (int i = 0; i < _planetL.Length; i++)
+            {
+                Destroy(_planetL[i]);
+            }
+        }
+    }
+
     // --- The Win State ---
     public void openWinBox()
     {
@@ -75,6 +108,7 @@ public class MenuAndUIScript : MonoBehaviour
     {
         LoadingScreenUI.SetActive(true);
 
+        clearLevel();
         winBoxUI.SetActive(false);
         mainMenuPanel.SetActive(true);
         ResetLevel();

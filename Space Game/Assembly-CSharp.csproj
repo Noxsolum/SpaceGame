@@ -64,7 +64,6 @@
   <ItemGroup>
     <Compile Include="Assets\CameraScript.cs" />
     <Compile Include="Assets\GravityScript.cs" />
-    <Compile Include="Assets\LevelController.cs" />
     <Compile Include="Assets\LevelLoader.cs" />
     <Compile Include="Assets\MenuAndUIScript.cs" />
     <Compile Include="Assets\PlanetScript.cs" />
