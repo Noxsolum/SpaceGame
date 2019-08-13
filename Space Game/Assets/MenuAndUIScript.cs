@@ -13,12 +13,14 @@ public class MenuAndUIScript : MonoBehaviour
 {
     // --- Variables ---
     public int launchDist;
+    private int levelUnlock = 0;
     private Vector2 startPos = new Vector2(0.0f, 1.35f);
 
     // --- UI ---
     public Text scoreText;
     public winTrigger winTrigger;
-    public GameObject cameraScript, mainMenuPanel, winBoxUI, LoadingScreenUI;
+    public GameObject[] levelButtons;
+    public GameObject cameraScript, mainMenuPanel, winBoxUI, LoadingScreenUI, ResetButton;
 
     // --- GameObjects ---
     public GameObject rocketShip;
@@ -34,8 +36,15 @@ public class MenuAndUIScript : MonoBehaviour
         // --- Getting UI Gameobjects ---
         mainMenuPanel = GameObject.FindGameObjectWithTag("LevelMenu");
         winBoxUI = GameObject.FindGameObjectWithTag("WinBoxUI");
+        levelButtons = GameObject.FindGameObjectsWithTag("LevelButtons");
+        ResetButton = GameObject.FindGameObjectWithTag("ResetButton");
 
+        for(int x = 1; x < levelButtons.Length; x++)
+        {
+            levelButtons[x].SetActive(false);
+        }
 
+        ResetButton.SetActive(false);
         winBoxUI.SetActive(false);
         LoadingScreenUI.SetActive(false);
     }
@@ -100,32 +109,43 @@ public class MenuAndUIScript : MonoBehaviour
     public void openWinBox()
     {
         Debug.Log("It's all connected");
-
+        levelUnlock++;
         winBoxUI.SetActive(true);
     }
 
-    public void hideWinBoxClose()
+
+    public void hideWinBox()
     {
         LoadingScreenUI.SetActive(true);
 
         clearLevel();
         winBoxUI.SetActive(false);
         mainMenuPanel.SetActive(true);
+        levelButtons[levelUnlock].SetActive(true);
+        ResetButton.SetActive(false);
         ResetLevel();
 
         LoadingScreenUI.SetActive(false);
     }
 
+    // --- Hides the Level Select ---
     public void hideMenu()
     {
+        LoadingScreenUI.SetActive(true);
+
         mainMenuPanel.SetActive(false);
+        ResetButton.SetActive(true);
+
+        LoadingScreenUI.SetActive(false);
     }
 
+    // --- Brings Up The Loading Screen ---
     public void openLoadingScreen()
     {
         LoadingScreenUI.SetActive(true);
     }
 
+    // --- Hides the Loading Screen ---
     public void hideLoadingScreen()
     {
         LoadingScreenUI.SetActive(false);
