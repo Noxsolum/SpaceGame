@@ -1,2 +1,5 @@
 # SpaceGame
-Worked out basic mechanics. Just sorting the UI and Level system.
+To do List
+- Add PC controls for easier development.
+- Code cleanup.
+- Move out input to an independant file, currently the input file is a bit cluttered.
