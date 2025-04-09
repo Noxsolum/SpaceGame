@@ -5,7 +5,6 @@ C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\Assembly-CSh
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\Microsoft.Win32.Primitives.dll
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\mscorlib.dll
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\netstandard.dll
-C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\nunit.framework.dll
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\System.AppContext.dll
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\System.Collections.Concurrent.dll
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\System.Collections.dll
@@ -123,7 +122,6 @@ C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\Unity.Analyt
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\Unity.Analytics.StandardEvents.dll
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\Unity.Analytics.Tracker.dll
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\Unity.CollabProxy.Editor.dll
-C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\Unity.Locator.dll
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\Unity.TextMeshPro.dll
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\Unity.TextMeshPro.Editor.dll
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\Unity.Timeline.dll
@@ -159,11 +157,9 @@ C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.SpriteMaskModule.dll
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.SpriteShapeModule.dll
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.StreamingModule.dll
-C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.StyleSheetsModule.dll
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.SubstanceModule.dll
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.TerrainModule.dll
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.TerrainPhysicsModule.dll
-C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.TestRunner.dll
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.TextCoreModule.dll
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.TextRenderingModule.dll
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.TilemapModule.dll
@@ -191,10 +187,8 @@ C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.ClusterRendererModule.dll
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\Unity.Cecil.dll
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\Unity.SerializationLogic.dll
-C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\Unity.DataContract.dll
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\ExCSS.Unity.dll
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
-C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\Unity.IvyParser.dll
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\Unity.CecilTools.dll
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.xml
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEditor.xml
@@ -233,7 +227,6 @@ C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.SpriteMaskModule.xml
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.SpriteShapeModule.xml
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.StreamingModule.xml
-C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.StyleSheetsModule.xml
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.SubstanceModule.xml
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.TLSModule.xml
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.TerrainModule.xml
@@ -259,9 +252,6 @@ C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.VideoModule.xml
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.WindModule.xml
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.XRModule.xml
-C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.UI.xml
-C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.TestRunner.xml
-C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\nunit.framework.xml
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.ClusterInputModule.xml
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.ClusterRendererModule.xml
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
@@ -269,3 +259,20 @@ C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\obj\Debug\Assembly-CSharp.c
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\obj\Debug\Assembly-CSharp.dll
 C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\obj\Debug\Assembly-CSharp.pdb
+C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\Unity.2D.Sprite.Editor.dll
+C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\Unity.2D.Tilemap.Editor.dll
+C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\Unity.Rider.Editor.dll
+C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\Unity.VSCode.Editor.dll
+C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEditor.UI.dll
+C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.AndroidJNIModule.dll
+C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.DSPGraphModule.dll
+C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.InputLegacyModule.dll
+C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\Unity.VSCode.Editor.pdb
+C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.UI.pdb
+C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\Unity.Rider.Editor.pdb
+C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\Unity.2D.Sprite.Editor.pdb
+C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\Unity.2D.Tilemap.Editor.pdb
+C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEditor.UI.pdb
+C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.AndroidJNIModule.xml
+C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.DSPGraphModule.xml
+C:\Users\danie\Documents\GitHub\SpaceGame\Space Game\Temp\bin\Debug\UnityEngine.InputLegacyModule.xml

@@ -16,6 +16,19 @@ TagManager:
   - WinBoxUI
   - LoadingScreen
   - LevelButtons
+  - Background
+  - FailBoxUI
+  - ExitSign
+  - SettingsPanel
+  - CreditsPanel
+  - TitlePanel
+  - PersistSettings
+  - DebugCircles
+  - Arrow
+  - Boost
+  - Home
+  - Orbs
+  - StartBox
   layers:
   - Default
   - TransparentFX
@@ -25,8 +38,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Objects Layer
+  - Background Layer
   - 
   - 
   - 
@@ -52,4 +65,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background Layer
+    uniqueID: 122993719
+    locked: 0
+  - name: Debug Layer
+    uniqueID: 931951725
+    locked: 0
+  - name: Objects Layer
+    uniqueID: 2690522777
     locked: 0
